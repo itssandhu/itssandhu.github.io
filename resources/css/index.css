@@ -1068,8 +1068,8 @@ footer p {
     display: block;
   }
   header .heroImageContainer img {
-    -webkit-box-shadow: 12px 0 #d9c8f1;
-            box-shadow: 12px 0 #d9c8f1;
+    -webkit-box-shadow: 12px 0 rgb(194, 76, 70);
+            box-shadow: 12px 0 rgb(194, 76, 70);
   }
   .socialsList {
     -webkit-box-pack: center;
