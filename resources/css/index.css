@@ -905,7 +905,7 @@ footer p {
 
 /**********************/
 /*   MAX WIDTH 1040PX */
-/**********************//*
+/**********************/ /*
 @media (max-width: 1040px) {
   .contactFormContainer form {
     -ms-grid-columns: (1fr)[1];
@@ -917,8 +917,8 @@ footer p {
     -ms-grid-column-span: 1;
     grid-column: 1 /2;
   }
-}*/
-
+} 
+*/
 /**********************/
 /*   MIN WIDTH 991PX  */
 /**********************/
