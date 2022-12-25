@@ -171,6 +171,45 @@ button, select {
   text-transform: none;
 }
 
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 body {
   font-family: 'Georgia', sans-serif;
   font-size: 125%;
@@ -223,7 +262,7 @@ section {
   padding-left: 80px;
   letter-spacing: 1px;
 }
-/*
+
 body{
   text-align: center;
   font-family: 'Georgia', sans-serif;
@@ -234,7 +273,23 @@ body{
   display: flex;
   color: #333;
   position: relative;
-}*/
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.linesContainer .span{
+  color: #333;
+}
 a {
   text-decoration: none;
   color: white;
@@ -296,7 +351,7 @@ section {
   top: 35px;
   right: 25px;
   z-index: 20;
-  display: none;
+  
 }
 
 .menuButton:focus {
@@ -312,6 +367,7 @@ section {
   width: 25px;
   height: 2px;
   background-color: black;
+  color: black;
   position: absolute;
   display: block;
   content: '';
@@ -795,7 +851,7 @@ header .description .socialsResume .resumeLink:focus {
   -webkit-column-gap: 25px;
           column-gap: 25px;
   margin-bottom: 35px;
-}*/
+} */
 .contactFormContainer form input,
 .contactFormContainer form textarea {
   border: 1px solid #eee;
@@ -935,7 +991,7 @@ footer p {
 }
 
 /**********************/
-/*   MAX WIDTH 900PX  */
+/*   MAX WIDTH 990PX  */
 /**********************/
 @media (max-width: 990px) {
   .outerWrapper {
@@ -943,15 +999,12 @@ footer p {
     margin-left: 0;
   }
   .sideMenu {
-    width: 45px;
-    padding-right: 10px;
+    width: 220px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .sideMenu:hover {
-    width: 220px;
-  }
+  
   .sideMenu nav {
     margin-top: 40px;
   }
