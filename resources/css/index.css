@@ -1124,6 +1124,9 @@ footer p {
 /*   MAX WIDTH 400PX  */
 /**********************/
 @media (max-width: 400px) {
+  .sectionContainer{
+    border-radius: 20px;
+  }
   header {
     padding: 40px 0;
   }
