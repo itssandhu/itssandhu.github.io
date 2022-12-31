@@ -994,6 +994,14 @@ footer p {
 /*   MAX WIDTH 990PX  */
 /**********************/
 @media (max-width: 990px) {
+  header .description .socialsResume {
+    width: 100%;
+    justify-content: center;
+  }
+
+  header .heroImageContainer{
+    padding-bottom: 30px;
+  }
   .outerWrapper {
     width: 100%;
     margin-left: 0;
@@ -1029,11 +1037,9 @@ footer p {
   .socialsList {
     margin-left: 10px;
   }
-/*
-  body{
-    padding: 0px 75px;
-    
-  }*/
+  .socialsResume{
+    position: center;
+  }
 }
 
 /**********************/
