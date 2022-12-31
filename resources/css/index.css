@@ -998,6 +998,9 @@ footer p {
     width: 100%;
     justify-content: center;
   }
+  .sectionContainer{
+    padding: 36px;
+  }
 
   header .heroImageContainer{
     padding-bottom: 30px;
@@ -1072,8 +1075,8 @@ footer p {
     height: 250px;
   }
   .sectionContainer {
-    background-color: transparent;
-    padding: 0;
+    background-color: white;
+    padding: 36px;
   }
   .aboutContainer {
     line-height: 1.3;
