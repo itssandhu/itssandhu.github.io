@@ -172,7 +172,7 @@ button, select {
 }
 
 button, html input[type=button], input[type=reset], input[type=submit] {
-  -webkit-appearance: button;
+  appearance: button;
   cursor: pointer;
 }
 
@@ -187,13 +187,13 @@ input[type=checkbox], input[type=radio] {
 }
 
 input[type=search] {
-  -webkit-appearance: textfield;
+  appearance: textfield;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
 input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 button::-moz-focus-inner, input::-moz-focus-inner {
@@ -351,8 +351,7 @@ section {
   top: 35px;
   right: 25px;
   z-index: 20;
-  
-}
+  }
 
 .menuButton:focus {
   border: 2px solid rgb(194, 76, 70);
@@ -366,8 +365,7 @@ section {
   border-radius: 5px;
   width: 25px;
   height: 2px;
-  background-color: black;
-  color: black;
+  background-color: #333;
   position: absolute;
   display: block;
   content: '';
@@ -376,6 +374,8 @@ section {
 .menuButton .linesContainer span {
   top: 3px;
   left: -6px;
+  background-color: #333;
+  z-index: 30;
 }
 
 .menuButton .linesContainer span:before {
@@ -961,11 +961,11 @@ footer p {
 
 /**********************/
 /*   MAX WIDTH 1040PX */
-/**********************/ /*
+/**********************/ 
 @media (max-width: 1040px) {
   .contactFormContainer form {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: 1fr 1;
+        grid-template-columns: 1 1fr;
   }
   .contactFormContainer form .subjectInput,
   .contactFormContainer form .messageInput {
@@ -974,7 +974,7 @@ footer p {
     grid-column: 1 /2;
   }
 } 
-*/
+
 /**********************/
 /*   MIN WIDTH 991PX  */
 /**********************/
@@ -1010,6 +1010,7 @@ footer p {
   }
   .menuButton {
     display: block;
+    color: #333;
   }
   header {
     display: block;
