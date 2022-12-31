@@ -999,7 +999,7 @@ footer p {
     margin-left: 0;
   }
   .sideMenu {
-    width: 220px;
+    width: 0;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
