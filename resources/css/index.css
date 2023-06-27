@@ -1,3 +1,35 @@
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+header, .navBar, .innerWrapper, .logo, .sideMenu{
+animation: fadeIn 3s;
+-webkit-animation: fadeIn 3s;
+-moz-animation: fadeIn 3s;
+-o-animation: fadeIn 3s;
+-ms-animation: fadeIn 3s;
+}
+
 *{
   overflow: scroll;
   box-sizing: border-box;
@@ -1076,7 +1108,8 @@ footer p {
   }
   .sectionContainer {
     background-color: white;
-    padding: 36px;
+    padding: 18px;
+    border-radius: 20px;
   }
   .aboutContainer {
     line-height: 1.3;
