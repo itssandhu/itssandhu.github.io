@@ -31,7 +31,7 @@ animation: fadeIn 3s;
 }
 
 *{
-  overflow: scroll;
+  /*overflow: scroll;*/
   box-sizing: border-box;
 }
 
