@@ -830,6 +830,7 @@ header .description .socialsResume .resumeLink:focus {
   transition: all 0.3s ease-in;
   border: 1px solid #eee;
   padding: 24px;
+  margin: 63px;
   border-radius: 15px;
 }
 
@@ -883,7 +884,7 @@ header .description .socialsResume .resumeLink:focus {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/*
+
 .contactFormContainer form {
   display: -ms-grid;
   display: grid;
@@ -893,10 +894,11 @@ header .description .socialsResume .resumeLink:focus {
   -webkit-column-gap: 25px;
           column-gap: 25px;
   margin-bottom: 35px;
-} */
+} 
 .contactFormContainer form input,
 .contactFormContainer form textarea {
   border: 1px solid #eee;
+  border-radius: 10px;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
   padding: 11px 20px;
