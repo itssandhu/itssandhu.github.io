@@ -1052,16 +1052,27 @@ footer p {
   .outerWrapper {
     width: 100%;
     margin-left: 0;
-  }
+  } 
   .sideMenu {
     width: 0;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  
+  .navItem{
+    display: none;
+  }
+  .navBar{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
   .sideMenu nav {
     margin-top: 40px;
+  }
+  .navItemName{
+    display: none;
   }
   .menuButton {
     display: block;
